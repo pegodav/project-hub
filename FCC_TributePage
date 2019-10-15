@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: salmon
+    }
+    #title {
+      font-size: 40px;
+      text-align: center;
+    }
+    #subtitle {
+      font-size: 20px;
+      text-align: center;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+    }
+    h3 {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+      margin: auto;
+      border-radius: 50%;
+    }
+    .img-caption {
+      text-align: center;
+    }
+  </style>
+  <body id="main">
+    <h1 id="title"> <strong> The Life of Jane Addams </strong></h1>
+    <h1 id="subtitle"> A Reformist for Settlement and Women's Rights </h2>
+    <div id="img-div">
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jane_Addams_-_Bain_News_Service.jpg/440px-Jane_Addams_-_Bain_News_Service.jpg" alt="Image of Jane Addams">
+      <p id="img-caption" class="img-caption"> Image of Jane Addams on a boat in 1926. </p>
+    </div>
+    <h2> Major Events of Addams' Life </h2>
+      <div id="tribute-info">
+        <h3> Settlement Reform</h3>
+          <ul>
+            <li> <strong> 1887 -</strong> Addams first reads about the idea of a settlement house </li>
+            <li> <strong> 1888 -</strong> Addams travels to London to visit and observe a settlement house </li>
+            <li> <strong> 1889 -</strong> Addams opens the Hull House settlement house in Chicago housing 25 women at its peak </li>
+            <li> <strong> 1909 -</strong> Addams is elected as the first female president of the National Conference of Charities and Corrections </li>
+            <li> <strong> 1914 -</strong> Addams is selected as the first head of the National Federation of Settlement and Neighborhood Centers </li>
+          </ul>
+        <h3> Civil Rights for Women and Ethnic Minorities </h3>
+          <ul>
+            <li> <strong> 1903 -</strong> Addams becomes VP of National Women's Trade Union </li>
+            <li> <strong> 1909 -</strong> Helps to Found NAACP </li>
+            <li> <strong> 1911 -</strong> Addams becomes First VP of National American Woman Suffrage Association </li>
+            <li> <strong> 1915 -</strong> Helps organize Woman's Peace Party and is elected 1st Chairman </li>
+            <li> <strong> 1919 to 1929 -</strong> Founds and Acts as President for Women's International League for Peace and Freedom </li>
+            <li><strong> 1931 -</strong> Addams receives the Nobel Peace Prize for her efforts </li>
+          </ul>
+      </div>
+    <p> Follow this link for more <a href="https://en.wikipedia.org/wiki/Jane_Addams#Settlement_houseinformation" id="tribute-link" target="_blank"> information about Jane Addams </a> and her life!
+  </body>
+</html>
