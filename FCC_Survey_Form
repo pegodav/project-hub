@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    header {
+    background-color: hsl(120,80%,70%);
+    width: 300px;
+    height: 150px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    }
+    body {
+    background-color: lavender;
+    }
+    p {
+    font-family: sans-serif;
+    width: 350px;
+    height: auto;
+    text-align: justify;
+    }
+    #survey-form {
+    width: 350px;
+    background-color: hsl(40,80%,70%);
+    padding: 10px 10px 10px 10px;
+    }
+    #submit {
+    text-align: center;
+    margin: auto;
+    }
+    </style>
+  </head>
+
+<!-- Survey components are located below -->
+  <header>
+    <h1 id="title"> Character Assessment Report </h1>
+  </header>
+  <body>
+      <p id="description"> This form looks to impact an individuals social credit through a character assessment survey.
+      Please note that results will be kept confidential from the individual being assessed.
+      Honest and descriptive answers will help any and all future employers/leasers/etc. understand more
+      about the credibility of the individual. </p>
+    <form id="survey-form">
+      <label for="name" id="name-label"> Your Name (req): </label>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+    <br>
+      <label for="email" id="email-label"> Email (req) </label>
+      <input type="email" id="email" name="email" placeholder="E-mail" pattern="[A-Za-z0-9]{7,infinity}" required>
+    <br>
+      <label for="number" id="number-label"> Age in Years (req)</label>
+      <input type="number" id="number" name="number" step="1" min="15" max="110" required placeholder="Age">
+    <br>
+
+      <label for="dropdown" id="dropdown-label"> Relation to Individual (req)</label>
+      <select id="dropdown" name="relation" required>
+        <option value="" disabled selected value> Select One </option>
+        <option value="Employer"> Employer </option>
+        <option value="Landlord"> Landlord </option>
+        <option value="Family/Friend"> Family/Friend </option>
+        <option value="Other"> Other </option>
+      </select>
+    <br>
+      <label for="dropdown-other"> If you selected "Other" please specify below: </label>
+      <input type="text" id="dropdown-other" name="dropdown-other" placeholder="Insert Text Here">
+    <br>
+    <br>
+    <label> How would you rate the credibility of the individual?:</label>
+      <label for="Low">Low:</label>
+      <input type="radio" id="low" name="satisfaction" value="low">
+    <br>
+      <label for="Below-Average">Below-Average:</label>
+      <input type="radio" id="below-average" name="satisfaction" value="Below-Average">
+    <br>
+      <label for="average">Average:</label>
+      <input type="radio" id="average" name="satisfaction" value="Below-Average">
+    <br>
+      <label for="above-average">Above-Average</label>
+      <input type="radio" id="above-average" name="satisfaction" value="above-average">
+    <br>
+      <label for="high"> High: </label>
+      <input type="radio" id="high" name="satisfaction" value="high">
+    <br>
+    <br>
+      <label> What qualities would you say the Individual possesses?
+    <br>
+      <label for="timely">Timely</label>
+      <input type=checkbox id="timely" name="quality" value="timely">
+    <br>
+      <label for="motivated"> Motivated</label>
+      <input type="checkbox" id="motivated" name="quality" value="motivated">
+    <br>
+      <label for="honest"> Honest </label>
+      <input type="checkbox" id="honest" name="quality" value="honest">
+    <br>
+      <label for="loyal"> Loyal </label>
+      <input type="checkbox" id="loyal" name="quality" value="loyal">
+    <br>
+      <label for="respectful"> Respectful </label>
+      <input type="checkbox" id="respectful" name="quality" value="respectful">
+    <br>
+      <label for="responsible"> Responsible </label>
+      <input type="checkbox" id="responsible" name="quality" value="responsible">
+    <br>
+      <label for="reliable"> Reliable</label>
+      <input type="checkbox" id="reliable" name="quality" value="reliable">
+    <br>
+    <br>
+      <label for="comments"> Use this section below to elaborate on any aspect
+      of the survey that you feel needs more explanation (either very strong attributes or very weak ones).
+      You can also use this section to add information you think the survey omitted that would help judge the
+      individual's character. </label>
+    <br>
+      <textarea id="comments" name="comments" rows="15" cols="45">Replace text here with additional comments.
+      </textarea>
+    <br>
+      <button type="submit" id="submit"> Submit </button>
+    </form>
+  </body>
+</html>
